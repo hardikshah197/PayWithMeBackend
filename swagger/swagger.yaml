@@ -1,0 +1,64 @@
+swagger: '2.0'
+info:
+  title: Payment Service Routes
+  description: Apis for Payment Service
+  version: 1.0.0
+consumes:
+  - application/json
+produces:
+  - application/json
+host: localhost:4000
+basePath: /api
+schemes:
+  - http
+paths:
+  /health:
+    get:
+      summary: check health of server
+      responses:
+        200:
+          description: OK
+        default:  
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'   
+parameters:
+  # upiInfoBody: &upiInfoBody
+  #   name: body
+  #   in: body
+  #   required: true
+  #   schema:
+  #     $ref: '#/definitions/upiInfoBody'
+definitions: 
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  # upiInfoBody:
+  #   required:
+  #     - payeeName
+  #     - vpa
+  #     - reason
+  #   properties:
+  #     amount:
+  #       type: integer
+  #     payeeName:
+  #       type: string
+  #       example: "Nitesh Kumar"
+  #     vpa: 
+  #       type: string
+  #       example: "lolo@okhdfcbank"
+  #     reason:
+  #       type: string
+  #       example: "for buying product"
+  # qrBody:
+  #   required:
+  #     - data
+  #     - base64
+  #   properties:
+  #     data:
+  #       type: string
+  #     base64:
+  #       type: boolean
