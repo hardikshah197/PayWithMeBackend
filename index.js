@@ -6,7 +6,7 @@ const PORT = config.port;
 const mongoose = require('mongoose')
 
 app.listen(PORT, () => {
-  logger.info(`payment service is running mode :: ${env} :: listening at ${PORT}`)
+  logger.info(`service is running mode :: ${env} :: listening at ${PORT}`)
 })
 
 connect()
