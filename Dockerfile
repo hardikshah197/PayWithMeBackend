@@ -1,1 +1,8 @@
-FROM node:alpine-9
+FROM node:10-alpine
+LABEL Dev=hardikshah.hs2015@gmail.com
+WORKDIR /usr/scr/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 4000
+CMD ["npm", "start"]

@@ -63,3 +63,7 @@
 2021-06-01T12:19:00.941Z : [32minfo[39m: connected to mongo db
 2021-06-01T12:19:21.989Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
 2021-06-01T12:19:26.458Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:21:36.462Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:21:41.848Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:22:57.772Z : [34mdebug[39m: generating upi link
+2021-06-01T12:22:57.773Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
