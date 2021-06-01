@@ -21,14 +21,72 @@ paths:
         default:  
           description: Error
           schema:
-            $ref: '#/definitions/ErrorResponse'   
+            $ref: '#/definitions/ErrorResponse'
+  /generate/upiLink:
+    post:
+      summary: generate UPI link with given details
+      parameters:
+        - $ref: '#/parameters/upiInfoBody'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /generate/upiCard:
+    post:
+      summary: create upi link for your bussiness
+      parameters:
+        - $ref: '#/parameters/upiInfoBody'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK        
+  /generate/qrcode:
+    post: 
+      summary: generate UPI card with given details
+      parameters: 
+        - $ref: '#/parameters/qrBody'
+      produces:
+        - application.json
+      responses:
+        200:
+          description: OK
+  /getupiCard/{vpa}:
+    get:
+      summary: get vpa info
+      parameters:
+        - $ref: '#/parameters/vpaPath'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK  
+  /totalUpiCards:
+    get:
+      summary: get total upi cards
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK      
 parameters:
-  # upiInfoBody: &upiInfoBody
-  #   name: body
-  #   in: body
-  #   required: true
-  #   schema:
-  #     $ref: '#/definitions/upiInfoBody'
+  upiInfoBody: &upiInfoBody
+    name: body
+    in: body
+    required: true
+    schema:
+      $ref: '#/definitions/upiInfoBody'
+  qrBody: &qrBody
+    name: body
+    in: body
+    required: true
+    schema:
+      $ref: '#/definitions/qrBody'    
+  vpaPath: &vpaPath
+    name: vpa
+    in: path
+    required: true
 definitions: 
   ErrorResponse:
     required:
@@ -36,29 +94,33 @@ definitions:
     properties:
       message:
         type: string
-  # upiInfoBody:
-  #   required:
-  #     - payeeName
-  #     - vpa
-  #     - reason
-  #   properties:
-  #     amount:
-  #       type: integer
-  #     payeeName:
-  #       type: string
-  #       example: "Nitesh Kumar"
-  #     vpa: 
-  #       type: string
-  #       example: "lolo@okhdfcbank"
-  #     reason:
-  #       type: string
-  #       example: "for buying product"
-  # qrBody:
-  #   required:
-  #     - data
-  #     - base64
-  #   properties:
-  #     data:
-  #       type: string
-  #     base64:
-  #       type: boolean
+  upiInfoBody:
+    required:
+      - username
+      - vpa
+      - message
+      - bg_color
+    properties:
+      amount:
+        type: integer
+      username:
+        type: string
+        example: "Hardik Sharma"
+      vpa: 
+        type: string
+        example: "meme@okhdfcbank"
+      message:
+        type: string
+        example: "for buying product"
+      bg_color:
+        type: string
+        example: "#000000"
+  qrBody:
+    required:
+      - data
+      - base64
+    properties:
+      data:
+        type: string
+      base64:
+        type: boolean

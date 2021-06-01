@@ -1,0 +1,65 @@
+2021-06-01T11:46:54.332Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:48:56.221Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:49:00.958Z : [32minfo[39m: connected to mongo db
+2021-06-01T11:52:23.674Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:52:28.694Z : [32minfo[39m: connected to mongo db
+2021-06-01T11:53:28.993Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:53:34.024Z : [32minfo[39m: connected to mongo db
+2021-06-01T11:55:58.375Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:56:04.151Z : [32minfo[39m: connected to mongo db
+2021-06-01T11:57:06.132Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T11:57:11.474Z : [32minfo[39m: connected to mongo db
+2021-06-01T11:57:19.329Z : [34mdebug[39m: inside health api :: stage -> development
+2021-06-01T11:57:50.018Z : [34mdebug[39m: generating upi link
+2021-06-01T11:57:50.019Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T11:58:39.946Z : [34mdebug[39m: generating upi card
+2021-06-01T11:58:39.946Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T11:58:39.947Z : [34mdebug[39m: creating base64
+2021-06-01T11:58:40.091Z : [34mdebug[39m: qr code generated
+2021-06-01T11:58:40.407Z : [31merror[39m: bg_color is not defined
+2021-06-01T12:00:00.225Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:00:04.990Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:00:07.439Z : [34mdebug[39m: generating upi card
+2021-06-01T12:00:07.440Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T12:00:07.441Z : [34mdebug[39m: creating base64
+2021-06-01T12:00:07.570Z : [34mdebug[39m: qr code generated
+2021-06-01T12:00:08.061Z : [31merror[39m: bg_color is not defined
+2021-06-01T12:01:43.149Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:01:47.197Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:01:51.558Z : [34mdebug[39m: generating upi card
+2021-06-01T12:01:51.559Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T12:01:51.559Z : [34mdebug[39m: creating base64
+2021-06-01T12:01:51.684Z : [34mdebug[39m: qr code generated
+2021-06-01T12:01:52.304Z : [31merror[39m: bg_color is not defined
+2021-06-01T12:05:38.076Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:05:42.756Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:06:46.265Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:06:50.309Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:06:58.360Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:07:03.620Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:07:19.241Z : [34mdebug[39m: generating upi card
+2021-06-01T12:07:19.243Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T12:07:19.244Z : [34mdebug[39m: creating base64
+2021-06-01T12:07:19.389Z : [34mdebug[39m: qr code generated
+2021-06-01T12:07:19.701Z : [31merror[39m: pay_model validation failed: qrcode: Path `qrcode` is required.
+2021-06-01T12:12:21.619Z : [34mdebug[39m: generating the qr code
+2021-06-01T12:12:21.620Z : [34mdebug[39m: creating base64
+2021-06-01T12:14:23.277Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:14:27.937Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:14:34.620Z : [34mdebug[39m: generating upi card
+2021-06-01T12:14:34.621Z : [34mdebug[39m: pay to Hardik%20Sharma for for%20buying%20product
+2021-06-01T12:14:34.622Z : [34mdebug[39m: creating base64
+2021-06-01T12:14:34.763Z : [34mdebug[39m: qr code generated
+2021-06-01T12:14:35.371Z : [34mdebug[39m: card created
+2021-06-01T12:15:17.524Z : [34mdebug[39m: finding upi card with vpa :: undefined
+2021-06-01T12:15:17.821Z : [31merror[39m: card not found
+2021-06-01T12:16:27.684Z : [34mdebug[39m: finding upi card with vpa :: undefined
+2021-06-01T12:16:28.060Z : [31merror[39m: card not found
+2021-06-01T12:16:58.171Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:17:01.675Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:17:09.626Z : [34mdebug[39m: finding upi card with vpa :: 8630877372@hs@okhdfcbank
+2021-06-01T12:17:09.935Z : [34mdebug[39m: card found
+2021-06-01T12:18:55.560Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:19:00.941Z : [32minfo[39m: connected to mongo db
+2021-06-01T12:19:21.989Z : [32minfo[39m: payment service is running mode :: development :: listening at 4000
+2021-06-01T12:19:26.458Z : [32minfo[39m: connected to mongo db
